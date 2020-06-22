@@ -44,15 +44,15 @@ public class FirstTestCase {
 		switch (radioButton) {
 		
 		case 0: {driver.findElement(By.xpath("//input[@value='Visa']")).click();
-		driver.findElement(By.name("ctl00$MainContent$fmwOrder$TextBox6")).sendKeys(Utility.randomNum(16));
+		driver.findElement(By.name("ctl00$MainContent$fmwOrder$TextBox6")).sendKeys("4"+ Utility.randomNum(15));
 			break;
 		}
 		case 1: {driver.findElement(By.xpath("//input[@value='MasterCard']")).click();
-		driver.findElement(By.name("ctl00$MainContent$fmwOrder$TextBox6")).sendKeys(Utility.randomNum(16));
+		driver.findElement(By.name("ctl00$MainContent$fmwOrder$TextBox6")).sendKeys("5" + Utility.randomNum(15));
 			break;
 		}
 		case 2: {driver.findElement(By.xpath("//input[@value='American Express']")).click();
-		driver.findElement(By.name("ctl00$MainContent$fmwOrder$TextBox6")).sendKeys(Utility.randomNum(15));
+		driver.findElement(By.name("ctl00$MainContent$fmwOrder$TextBox6")).sendKeys("3"+ Utility.randomNum(14));
 			break;
 		}
 		    }
